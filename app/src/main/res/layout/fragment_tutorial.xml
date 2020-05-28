@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ImageEffectFragment">
+
+  <TextView
+      android:id="@+id/tutorialName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:textColor="@android:color/black"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="@tools:sample/first_names"
+      android:layout_marginTop="10dp"
+      />
+
+  <TextView
+      android:id="@+id/tutorialDesc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tutorialName"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="10dp"
+      android:textColor="@android:color/black"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tutorialName"
+      tools:text="@tools:sample/full_names" />
+
+  <TextView
+      android:id="@+id/errorMessage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tutorialDesc"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="10dp"
+      android:layout_marginStart="411dp"
+      android:layout_marginEnd="411dp"
+      android:layout_marginBottom="731dp"
+      android:textColor="@android:color/holo_red_light"
+      android:textSize="15sp"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Image failed loading" />
+
+
+  <ImageView
+      android:id="@+id/snowFilterImage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tutorialDesc"
+      android:scaleType="fitCenter"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tutorialDesc"
+      tools:src="@tools:sample/backgrounds/scenic"
+      tools:ignore="ContentDescription" />
+
+  <ProgressBar
+      android:id="@+id/progressBar"
+      style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="@+id/snowFilterImage"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/snowFilterImage"
+      android:background="@android:color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

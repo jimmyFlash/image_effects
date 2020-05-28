@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ImageFx</string>
+    <string name="snow_title">Snow effect</string>
+    <string name="snow_url">https://cdn2.thecatapi.com/images/50wnHCU8_.jpg</string>
+    <string name="snow_desc">Applies a snow like filter to bitmap using pixel color channels</string>
+
+    <string name="sepia_name">Sepia effect</string>
+    <string name="sepia_url">https://cdn2.thecatapi.com/images/50wnHCU8_.jpg</string>
+    <string name="sepia_desc">Applies sepia toning effect to bitmap at 20%</string>
+
+    <string name="brighten_name">Brightening effect</string>
+    <string name="brighten_url">https://cdn2.thecatapi.com/images/50wnHCU8_.jpg</string>
+    <string name="brighten_desc">Brightens bitmap image.
+    </string>
+    
+    <string name="darken_name">Darken effect</string>
+    <string name="darken_url">https://cdn2.thecatapi.com/images/50wnHCU8_.jpg</string>
+    <string name="darken_desc">Darkens bitmap image.</string>
+
+    <string name="gray_name">Gray scale</string>
+    <string name="gray_url">https://cdn2.thecatapi.com/images/50wnHCU8_.jpg</string>
+    <string name="gray_desc">Applies gray scale effect to bitmap
+    </string>
+
+    <string name="invert_name">Invert color</string>
+    <string name="invert_url">https://cdn2.thecatapi.com/images/50wnHCU8_.jpg</string>
+    <string name="invert_desc">Applies color invert filter to bitmap
+    </string>
+
+    <string name="error_message">Error while loading image.</string>
+    <string name="error_message_timeout">Download timed out</string>
+    <string name="error_not_connected">Not connected to network/wifi</string>
+</resources>

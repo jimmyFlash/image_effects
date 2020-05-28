@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64"
+    >
+
+    <clip-path
+        android:name="clip"
+        android:pathData="M8,0 H58 V64 H8z" />
+
+    <path
+        android:name="bound_rec"
+        android:strokeColor="#FFF"
+        android:strokeWidth="1"
+        android:pathData="M0,0 H64 V64 H0z"
+        />
+
+    <path android:name="donut_centered"
+        android:strokeColor="#FFF"
+        android:strokeWidth="5"
+        android:pathData="M32,48 a16,16 0 1 1 1,0z" />
+
+
+
+
+</vector>
