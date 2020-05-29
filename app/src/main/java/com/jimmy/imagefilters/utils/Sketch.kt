@@ -6,8 +6,7 @@ import android.graphics.Color
 object Sketch {
 
   private const val COLOR_MAX = 0xff
-  private const val DEPTH = 20
-  private const val INTENSITY_FACTOR = 120
+  private const val INTENSITY_FACTOR = 150
 
 
   fun applySketchFilter(source: Bitmap): Bitmap {
@@ -57,7 +56,7 @@ object Sketch {
             }
         }
 
-        bitmapOut.setPixel(0, 0, newPixel)
+        bitmapOut.setPixel(x, y, newPixel)
       }
     }
 

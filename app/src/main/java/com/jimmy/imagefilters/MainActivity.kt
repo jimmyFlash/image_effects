@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.darken_name)))
     tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.gray_name)))
     tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.invert_name)))
+    tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.sketch_name)))
 
     imageEffectPagerAdapter = ImageEffectPagerAdapter(getImageEffectData(), supportFragmentManager)
 
@@ -64,6 +65,10 @@ class MainActivity : AppCompatActivity() {
 
     imageList.add(Image(getString(R.string.invert_name), getString(R.string.invert_url),
         getString(R.string.invert_desc), imageList.size))
+    Log.e("getImageEffectData", "tutorialList ${imageList.size}")
+
+    imageList.add(Image(getString(R.string.sketch_name), getString(R.string.sketch_url),
+        getString(R.string.sketch_desc), imageList.size))
     Log.e("getImageEffectData", "tutorialList ${imageList.size}")
 
     return imageList

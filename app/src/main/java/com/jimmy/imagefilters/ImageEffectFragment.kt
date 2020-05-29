@@ -153,6 +153,7 @@ class ImageEffectFragment : Fragment() {
         3 ->   DarkFilter.applyDarkFilter(originalBitmap)
         4 ->   GrayFilter.applyGrayFilter(originalBitmap)
         5 ->   InvertFilter.applyInvertFilter(originalBitmap)
+        6 ->   Sketch.applySketchFilter(originalBitmap)
         else ->  SnowFilter.applySnowEffect(originalBitmap)
       }
 

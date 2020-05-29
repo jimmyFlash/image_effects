@@ -27,6 +27,11 @@
     <string name="invert_desc">Applies color invert filter to bitmap
     </string>
 
+    <string name="sketch_name">Sketch effect</string>
+    <string name="sketch_url">https://cdn2.thecatapi.com/images/50wnHCU8_.jpg</string>
+    <string name="sketch_desc">Applies pencil sketch life effect
+    </string>
+
     <string name="error_message">Error while loading image.</string>
     <string name="error_message_timeout">Download timed out</string>
     <string name="error_not_connected">Not connected to network/wifi</string>
